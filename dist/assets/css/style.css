@@ -2751,21 +2751,21 @@ input[type=number] {
     }
   @    -webkit-keyframes moveright {
         0% {
-      left: -620px;
+      left: -610px;
     }
 
     100% {
-        left: -1240px;
+        left: -1220px;
     }
 }
 
 @keyframes moveright {
     0% {
-        left: -620px;
+        left: -610px;
     }
 
     100% {
-        left: -1240px;
+        left: -1220px;
     }
 }
 
@@ -2778,7 +2778,7 @@ input[type=number] {
 
 @-webkit-keyframes moveleft {
     from {
-        left: -620px;
+        left: -630px;
     }
 
     to {
@@ -2788,7 +2788,7 @@ input[type=number] {
 
 @keyframes moveleft {
     from {
-        left: -620px;
+        left: -630px;
     }
 
     to {

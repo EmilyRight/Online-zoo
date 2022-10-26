@@ -435,7 +435,6 @@ a {
 }
 .slider-card:hover {
   transition: 0.3s;
-  transform: scale(1.1);
 }
 .slider-card:hover img {
   filter: brightness(60%);
@@ -654,7 +653,7 @@ a {
 }
 
 .testimonials-slider__container {
-  width: 1165px;
+  width: 1170px;
   margin: 0 auto;
   margin-top: 4.7rem;
   position: relative;

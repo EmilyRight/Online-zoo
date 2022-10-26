@@ -95,7 +95,7 @@ const createTest = function (testobj) {
 
 const scrollTests = function () {
     if(window.innerWidth >= 1600) {
-        container.style.left = `-${scrollBar.value * 298}px`;
+        container.style.left = `-${scrollBar.value * 301}px`;
     } else if (window.innerWidth >= 1000 && window.innerWidth < 1600) {
         container.style.left = `-${scrollBar.value * Math.ceil(frameContainer.offsetWidth / 3)}px`;
     } else if (window.innerWidth >= 640 && window.innerWidth < 1000) {
