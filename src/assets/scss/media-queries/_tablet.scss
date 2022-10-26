@@ -283,7 +283,7 @@
         flex-direction: row;
         justify-content: start;
         position: absolute;
-        left: -620px;
+        left: -610px;
         gap: 2rem;
         transition: 2s;
             &-container {
@@ -347,7 +347,6 @@
     .slider__btn_right {
         right: 37%;
     }
-    ////
 
     .donates {
         padding-top: 2rem;
@@ -695,11 +694,11 @@
     }
     @keyframes moveright {
         0% {
-            left: -620px;
+            left: -610px;
 
         }
         100% {
-            left: -1240px;
+            left: -1220px;
         }
       }
 
@@ -709,7 +708,7 @@
       }
 
       @keyframes moveleft {
-        from {left: -620px;}
+        from {left: -630px;}
         to {left: 0px;}
       }
 

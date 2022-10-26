@@ -2313,7 +2313,7 @@ input[type=number] {
         -ms-flex-pack: start;
         justify-content: start;
         position: absolute;
-        left: -620px;
+        left: -610px;
         gap: 2rem;
         transition: 2s;
     }

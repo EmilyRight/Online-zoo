@@ -1894,7 +1894,7 @@ input[type=number] {
     flex-direction: row;
     justify-content: start;
     position: absolute;
-    left: -620px;
+    left: -610px;
     gap: 2rem;
     transition: 2s;
   }
@@ -2253,10 +2253,10 @@ input[type=number] {
   }
   @keyframes moveright {
     0% {
-      left: -620px;
+      left: -610px;
     }
     100% {
-      left: -1240px;
+      left: -1220px;
     }
   }
   .transition-right {
@@ -2265,7 +2265,7 @@ input[type=number] {
   }
   @keyframes moveleft {
     from {
-      left: -620px;
+      left: -630px;
     }
     to {
       left: 0px;
