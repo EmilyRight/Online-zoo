@@ -1,0 +1,19 @@
+@keyframes moveright {
+    from {left: 0px;}
+    to {left: -1200px;}
+  }
+
+  .transition-right {
+    animation-name: moveright;
+    animation-duration: 2s;
+  }
+
+  @keyframes moveleft {
+    from {left: -1160px;}
+    to {left: 0px;}
+  }
+
+  .transition-left {
+    animation-name: moveleft;
+    animation-duration: 2s;
+  }

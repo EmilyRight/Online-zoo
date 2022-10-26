@@ -1,0 +1,411 @@
+@import '../abstracts/_vars';
+
+@media screen and (min-width: 1000px) and (max-width: 1599px) {
+
+    .main-container {
+        max-width: 100%;
+        padding: 0;
+    }
+    .content-container {
+        max-width: 94rem;
+        padding: 0 3rem;
+    }
+
+    .header {
+        position: relative;
+        z-index: 100;
+        .nav-list {
+            gap: 4.8vw;
+
+        }
+    }
+
+    .about {
+        padding-top: 0;
+        padding-bottom: 4.7rem;
+
+        &__content {
+            width: 40%;
+            height: 100%;
+            max-width: 100%;
+            margin-left: 52.5%;
+            gap: 4rem;
+        }
+        &__text {
+            margin-top: 4rem;
+            font-size: 8.4rem;
+            line-height: 6.375rem;
+            letter-spacing: 0rem;
+
+            &_yellow {
+                letter-spacing: 0rem;
+            }
+            &::before{
+                width: 36.7rem;
+                height: 36.7rem;
+                top: -5.5rem;
+                left: -6.5rem;
+                z-index: -1000;
+            }
+        }
+
+    }
+
+    .map {
+        &::after {
+            display: none;
+         }
+        .map-description {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            padding-top: 11rem;
+
+            &__img {
+                background-size: cover;
+                min-height: 41rem;
+                background-position-x: -7rem;
+            }
+            &__text {
+                &_main {
+                  .map__title{
+                        margin-bottom: 1.7rem;
+                    }
+                    .map__text {
+                        margin-bottom: 5.4rem;
+                    }
+                }
+
+                &_sub {
+                    .map__subtitle{
+                        margin-bottom: 3.4rem;
+                    }
+                    .map__text {
+                        line-height: 2.24rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .animals {
+        padding-top: 7.6rem;
+        padding-bottom: 14.2rem;
+
+        &::before {
+            width: 35rem;
+            height: 25rem;
+            background-size: 25rem 20rem;
+            background-position-y: 5rem;
+            left: 0px;
+            bottom: 0px;
+        }
+
+        &::after {
+            background-image: url('../images/strelitzia.png');
+            content: '';
+            position: absolute;
+            width: 24.1rem;
+            height: 18rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            right: 0px;
+            bottom: 0px;
+        }
+    }
+
+    .slider-box {
+        width: 940px;
+        height: 880px;
+        margin-bottom: 6rem;
+        padding: 0;
+    }
+
+    .slider {
+        grid-template-columns: 940px 940px 940px;
+        grid-template-rows: 1fr;
+        min-width: 3480px;
+        left: -960px;
+            &-container {
+                width: 940px;
+            }
+            &-card {
+                margin-top: 6rem;
+                max-width: 29rem;
+                height: 34rem;
+                position: relative;
+
+                &__img img{
+                    max-width: 100%;
+                }
+                &-row {
+                    max-height: 35rem;
+                    gap: 2rem;
+                    position: absolute;
+                    transition: 5s;
+                }
+
+            }
+        }
+
+    .bananas::after {
+        content: '';
+        right: 5px;
+        top: 86%;
+    }
+
+    .fish::after {
+        content: '';
+        right: 8px;
+        top: 86%;
+    }
+
+    .slider__btn_left,
+    .slider__btn_right{
+       top: 47%;
+    }
+
+    .slider__btn_left {
+      left: 34%;
+      transform: rotate(180deg);
+    }
+
+    .slider__btn_right {
+        right: 34%;
+    }
+    ////
+
+    .donates {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        @include orange-grad;
+
+        &-block {
+            padding: 0;
+            padding-bottom: 5.2rem;
+            gap: 4.7rem;
+        }
+    }
+
+    .donates__text-block {
+        padding: 3rem 0 0 4.8rem;
+        .donates__title {
+            margin-left: 21%;
+            margin-bottom: 2.5rem;
+        }
+
+        .donates__subtitle {
+            margin-bottom: 2rem;
+        }
+
+        .donates__primary-text {
+            max-width: 90%;
+            &:nth-of-type(1) {
+            font-weight: normal;
+            }
+        }
+
+    }
+
+    .donate-instruction__title {
+        text-align: center;
+        margin-bottom: 3.6rem;
+    }
+
+    .donate-cards {
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2.8rem;
+    }
+
+    .donate-card {
+        width: 17.8%;
+        position: static;
+    }
+
+    .feed-btn {
+       margin-top: 3.1rem;
+       padding: 0;
+    }
+
+
+    ///
+    .testimonials {
+        padding: 10rem 0 14rem;
+
+        &::after {
+            width: 20rem;
+            height: 25rem;
+        }
+    }
+
+    .testimonials-slider__container {
+        max-width: 94rem;
+        margin-top: 3rem;
+    }
+
+    .testimonials-slider__container_inner {
+        gap: 3rem;
+
+    }
+    .testimonials-slider-item {
+        min-width: 28.8rem;
+    }
+
+    .testimonials-slider-item__content {
+        min-width: calc(91% - 4px);
+        height: 38.7rem;
+    }
+
+    .slider__scroll-bar {
+        margin-bottom: 5.1rem;
+        width: 41%;
+        height: 6px;
+    }
+
+    .slider__scroll-bar[type=range]::-webkit-slider-thumb {
+        width: 20%;
+        height: 6px;
+    }
+
+    .slider__scroll-bar[type=range]::-moz-range-thumb {
+        width: 20%;
+        height: 6px;
+    }
+    ///
+    .footer {
+        padding-top: 4.1rem;
+        padding-bottom: 4.5rem;
+        grid-template-columns: 30rem auto 30rem;
+        grid-column-gap: 0;
+        &__subscribe-block {
+            grid-column: 2/4;
+            justify-self: end;
+            margin-right: 3rem;
+
+            .footer__subscribe {
+                padding-top: 1.5rem;
+
+                &-input {
+                    width: 60%;
+                    height: 2.6vh;
+                }
+
+            }
+
+        }
+
+        &__nav {
+            justify-self: start;
+            .nav-list {
+                font-weight: normal;
+                gap: 4.5rem;
+            }
+        }
+    }
+
+    .donate__panda {
+        min-height: 34rem;
+        background-position: 0 0;
+    }
+
+    .inner-container {
+        padding: 4rem 0 3rem;
+        margin: 0 3rem;
+    }
+
+    .donation-title {
+        max-width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .donation-text {
+        max-width: 99%;
+    }
+
+    .donation-subtitle {
+        margin-bottom: 4rem;
+    }
+
+    .donation-info {
+        background-image: none;
+        background-color: rgba(255, 255, 255, 0.52);
+        border-radius: 2rem;
+        padding: 2rem 4.7rem 4.7rem;
+        &__title {
+            margin-left: -1rem;
+            margin-bottom: 1.5rem;
+        }
+        &__text {
+            margin-bottom: 9.7rem;
+        }
+        &__icons {
+            margin-left: -1rem;
+            margin-bottom: 4.5rem;
+        }
+    }
+
+    .feed {
+        width: 93%;
+        margin: 2rem auto;
+        margin-top: 2rem;
+        padding: 1.2rem 3rem;
+        background-color: #404950;
+        margin-bottom: 1.3rem;
+        &__flex-line {
+            justify-content: space-between;
+        }
+        &-bar {
+            width: 100%;
+        }
+        &__flex-line input[type=radio] + label {
+            font-size: 26px;
+            }
+        &__flex-line__item {
+            margin-right: 6rem;
+          &:nth-child(1) {
+            display: none;
+        }
+        }
+    }
+    .input-container {
+        height: 5.5rem;
+    }
+    .custom-amount__input {
+        position: static;
+        width: 24.8rem;
+        padding: 1.7rem 1rem;
+        background-position: 97% 50%;
+    }
+
+    .feed-radio-block {
+        padding-top: 2.6rem;
+        padding-bottom: 3.3rem;
+        gap: 6.5rem;
+    }
+
+    @keyframes moveright {
+        from {left: -960px;}
+        to {left: -1920px;}
+      }
+
+      .transition-right {
+        animation-name: moveright;
+        animation-duration: 2s;
+      }
+
+      @keyframes moveleft {
+        from {left: -960px;}
+        to {left: 0px;}
+      }
+
+      .transition-left {
+        animation-name: moveleft;
+        animation-duration: 2s;
+      }
+
+
+}

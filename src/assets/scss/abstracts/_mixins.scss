@@ -1,0 +1,95 @@
+@import './vars';
+@mixin orange-grad() {
+    background-image:
+    linear-gradient(315.75deg,
+    rgba(254, 210, 144, 0.7) 30.06%,
+    #FEBDAB 100.95%,
+    rgba(254, 210, 144, 0.7) 106.36%),
+
+    linear-gradient(315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #E0D8F0 80.49%,
+    #EAF7FE 127.9%,
+    #EAF7FE 149.54%),
+
+    linear-gradient(315.75deg,
+    rgba(254, 189, 171, 0.74) 30.06%,
+    rgba(243, 169, 248, 0.66) 50.74%,
+    #E0D8F0 80.49%,
+    #EAF7FE 127.9%,
+    #EAF7FE 149.54%);;
+}
+
+@mixin pure-orange-grad() {
+    background-image: -o-linear-gradient(336.04deg, #F9804B 1.49%, #FE9013 101.44%);
+   background-image: linear-gradient(113.96deg,
+    #F9804B 1.49%,
+    #FE9013 101.44%);
+}
+
+@mixin pink-gradient () {
+    background-image: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+@mixin center-content (){
+    max-width: 116rem;
+    margin: 0 auto;
+}
+
+@mixin console-log () {
+    border: 1px solid red;
+}
+
+@mixin btn-rounded () {
+        width: 28.8rem;
+        cursor: pointer;
+        padding: 1.6rem 0.5rem;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 2.5rem;
+        background-color: $color-dark-orange;
+        @include pure-orange-grad;
+        margin: 0 auto;
+}
+
+@mixin btn-polygon () {
+    width: 29.8rem;
+    cursor: pointer;
+    padding: 1.7rem 0rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: $color-dark-orange;
+    @include pure-orange-grad;
+}
+
+@mixin h2 () {
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 5.76rem;
+}
+
+@mixin h3 () {
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 4.68rem;
+    color: $color-black-blue;
+}
+
+@mixin h4 () {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+@mixin text-primary () {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+@mixin text-bold () {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
